@@ -1,30 +1,41 @@
 #include <iostream>
+#include <limits.h>
+#include <string.h>
 using namespace std;
-int main(int argc, char const *argv[])
+
+int main()
 {
-    int t;
+    int t, ans;
     cin >> t;
     for (int i = 0; i < t; i++)
     {
-        int w, x, y, z;
-        int sum1, sum2, sum3;
-        cin >> w >> x >> y >> z;
-        sum1 = x + y;
-        sum2 = x + z;
-        sum3 = y + z;
-        if (w == x || w == y || w == z)
+        int t;
+        cin >> t;
+        for (int i = 0; i < t; i++)
         {
-            cout << "yes" << endl;
+            int min = INT_MAX;
+            int n;
+            cin >> n;
+            int a[n];
+            for (int i = 0; i < n; i++)
+            {
+                cin >> a[i];
+            }
+            string b;
+            cin >> b;
+            for (int i = 0; i < n; i++)
+            {
+                if (b[i] == '0')
+                {
+                    if (min > a[i])
+                    {
+                        min = a[i];
+                    }
+                }
+            }
+            cout << min << endl;
         }
-        else if (w == sum1 || w == sum2 || w == sum3)
-        {
-            cout << "yes" << endl;
-        }
-        else
-        {
-            cout << "no" << endl;
-        }
-    }
 
-    return 0;
+        return 0;
+    }
 }

@@ -1,40 +1,41 @@
 #include <iostream>
+
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
     int t, ans;
     cin >> t;
     for (int i = 0; i < t; i++)
     {
-        int tcCount;
-        cin >> tcCount;
-        int *arr = new int[tcCount];
-        int *sum = new int[tcCount];
-        for (int i = 0; i < tcCount; i++)
+        int t;
+        cin >> t;
+        for (int i = 0; i < t; i++)
         {
-            cin >> arr[i];
-        }
-        string tcStat;
-        cin >> tcStat;
-        for (int i = 0; i < tcStat.length(); ++i)
-        {
-            if (tcStat.at(i) == '0')
+
+            int n;
+            cin >> n;
+            int *a = new int[n];
+            for (int i = 0; i < n; i++)
             {
-                sum[i] = arr[i];
+                cin >> a[i];
             }
-        }
-        int min = sum[0];
-        int size = sizeof(sum) / sizeof(sum[0]);
-        for (int i = 0; i < size; i++)
-        {
-            if (sum[i] < min)
+            string b;
+            cin >> b;
+            int min = a[0];
+            for (int i = 0; i < b.size(); i++)
             {
-                min = sum[i];
+                if (b[i] == '0')
+                {
+                    if (min > a[i])
+                    {
+                        min = a[i];
+                    }
+                }
             }
-            ans = min;
+            cout << min << endl;
         }
-        cout << ans;
+
+        return 0;
     }
-    return 0;
 }
