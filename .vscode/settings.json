@@ -1,6 +1,6 @@
 {
+    "C_Cpp.errorSquiggles": "Enabled",
     "git.smartCommitChanges": "tracked",
-    "git.autofetch": true,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorStyle": "block",
     "C_Cpp.vcFormat.space.groupSquareBrackets": true,
@@ -22,7 +22,7 @@
         "ostream": "cpp",
         "cmath": "cpp",
         "xutility": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xlocale": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
 }
