@@ -24,7 +24,6 @@ int main(int argc, char const *argv[])
                 sum[i] = arr[i];
             }
         }
-
         int min = sum[0];
         int size = sizeof(sum) / sizeof(sum[0]);
         for (int i = 0; i < size; i++)
