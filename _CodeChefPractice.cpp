@@ -19,14 +19,11 @@ int main()
         }
         min = a[0];
         cin >> b;
-        for (int i = 0; i < b.size(); i++)
+        for (int i = 0; i < n; i++)
         {
             if (b[i] == '0')
             {
-                if (min > a[i])
-                {
-                    min = a[i];
-                }
+                mini = min(mini, arr[i]);
             }
         }
         cout << min << endl;
