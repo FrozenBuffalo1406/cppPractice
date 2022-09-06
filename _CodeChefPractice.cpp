@@ -1,32 +1,34 @@
 #include <iostream>
-#include <string.h>
+#include <cstring>
 using namespace std;
 
 int main()
 {
-    int t, ans;
-    cin >> t;
+    int t, min;
     for (int i = 0; i < t; i++)
     {
         int n;
-        int min;
-        string b;
         cin >> n;
-        int *a = new int[n];
         for (int i = 0; i < n; i++)
         {
+            auto a = new int[n];
             cin >> a[i];
+            min = a[0];
         }
-        min = a[0];
-        cin >> b;
+        string v;
+        cin >> v;
+
         for (int i = 0; i < n; i++)
         {
-            if (b[i] == '0')
+            if (v[i] == '0')
             {
-                mini = min(mini, arr[i]);
+                if (min > v[i])
+                {
+                    min = v[i];
+                }
             }
         }
-        cout << min << endl;
     }
+    cout << min;
     return 0;
 }

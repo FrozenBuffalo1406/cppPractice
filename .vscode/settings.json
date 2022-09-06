@@ -23,6 +23,7 @@
         "cmath": "cpp",
         "xutility": "cpp",
         "xstring": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "utility": "cpp"
     },
 }
