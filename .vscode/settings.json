@@ -1,7 +1,10 @@
 {
+    "editor.multiCursorModifier": "alt",
+    "editor.hideCursorInOverviewRuler": false,
+    "editor.find.cursorMoveOnType": true,
+    "editor.cursorSmoothCaretAnimation": true,
     "C_Cpp.errorSquiggles": "Enabled",
     "git.smartCommitChanges": "tracked",
-    "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorStyle": "block",
     "C_Cpp.vcFormat.space.groupSquareBrackets": true,
     "C_Cpp.suggestSnippets": true,
