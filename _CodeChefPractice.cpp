@@ -7,22 +7,6 @@ int main()
     int t;
     int n = INT_MAX;
     string v;
-    // 5
-    // 3
-    // 5 10 3
-    // 000
-    // 3
-    // 5 10 3
-    // 001
-    // 3
-    // 5 5 3
-    // 001
-    // 3
-    // 5 5 3
-    // 101
-    // 5
-    // 10 100 100 10 10
-    // 00001
     cin >> t;
     for (int i = 0; i < t; i++)
     {
@@ -44,8 +28,8 @@ int main()
                 }
             }
         }
+        cout << min << endl;
     }
 
-    cout << min;
     return 0;
 }
