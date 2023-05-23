@@ -2,7 +2,7 @@
     "editor.multiCursorModifier": "alt",
     "editor.hideCursorInOverviewRuler": false,
     "editor.find.cursorMoveOnType": true,
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "C_Cpp.errorSquiggles": "Enabled",
     "git.smartCommitChanges": "tracked",
     "editor.cursorStyle": "block",
@@ -21,13 +21,23 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "git.suggestSmartCommit": false,
     "files.associations": {
+        "*.embeddedhtml": "html",
         "iostream": "cpp",
         "ostream": "cpp",
         "cmath": "cpp",
         "xutility": "cpp",
         "xstring": "cpp",
         "xlocale": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "stdbool.h": "c",
+        "*.tcc": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "regex": "c",
+        "tuple": "c",
+        "type_traits": "c"
     },
     "workbench.colorCustomizations": {
         "terminal.background": "#1D2021",
